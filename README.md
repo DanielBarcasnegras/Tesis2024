@@ -1,4 +1,4 @@
-# Tesis2024
+# Documentación general
 - Define ROI (Graphic method).py:	
 - Define ROI (Pattern method).py:	
 - Trackbar HSV.py: Permite observar en tiempo real las regiones generadas bajo cierto rango de parametros HSV. Sirve para determinar los tonos que se desean detectar.
