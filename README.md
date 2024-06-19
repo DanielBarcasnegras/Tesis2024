@@ -1,8 +1,14 @@
 # Tesis2024
 - Define ROI (Graphic method).py:	
 - Define ROI (Pattern method).py:	
-- Trackbar HSV.py: Permite observar en tiempo real las regiones generadas bajo cierto rango de parametros HSV. Sirve para determinar los tonos que se desean detectar. 
+- Trackbar HSV.py: Permite observar en tiempo real las regiones generadas bajo cierto rango de parametros HSV. Sirve para determinar los tonos que se desean detectar.
 
 Los códigos llamados Versión Axx son diferentes iteraciones del código de detección. En éste momento la más actualizada corresponde a la Versión A54, ya que esta usa Watchdog para revisar cambios en los archivos de una carpeta determinada y procede a realizar la extracción de datos, para luego enviar la información a MySQL. Se limita a realizar un conteo de pixeles dentro de un ROI.
 
-Se descartó la generación de contornos debido a conflictos de regiones. Un algoritmo watershed más refinado puede ser una solución ante estos problemas de overlapping, pero al menos por el momento no fue posible lograr un tunning optimo de los parametros.
+Cambios por implementar en Versión A54:
+- Cambiar labels de ROI (Regions of interest)
+- Cambiar labels/columnas
+- Conversión de pixeles a referencia real (cm2 o mm2)
+- Segmentación Watershed (Requiere más procesamiento previo de las imágenes para usar párametros universales, que no deban cambiarse por las diferentes condiciones ambientales)
+
+Se descartó temporalmente la generación de contornos debido a conflictos de interferencia entre regiones. Un algoritmo watershed más refinado puede ser una solución ante estos problemas de overlapping, pero al menos por el momento no fue posible lograr un tunning optimo de los párametros.
