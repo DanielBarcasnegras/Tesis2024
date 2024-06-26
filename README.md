@@ -12,3 +12,11 @@ Cambios por implementar en Versión A54:
 - Segmentación Watershed (Requiere más procesamiento previo de las imágenes para usar párametros universales, que no deban cambiarse por las diferentes condiciones ambientales)
 
 Se descartó temporalmente la generación de contornos debido a conflictos de interferencia entre regiones. Un algoritmo watershed más refinado puede ser una solución ante estos problemas de overlapping, pero al menos por el momento no fue posible lograr un tunning optimo de los párametros.
+
+Cambios pendientes en general:
+- Subir versión actualizada del código de procesamiento (Fase 2)
+- Guardar las imagenes en el sistema de archivos del sistema y guardar los file paths en MySQL. Facilita el proceso y la visualización en interfaz web. Sugerir estrategia de backup en nube con SD de alto endurance.
+- Raw data e insights: Ajustes de interfaz para visualizar los datos de mejor manera
+- Insights: Generar y subir gráficas de crecimiento (3 tipos)
+
+
